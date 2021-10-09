@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    color: #1f1f27;
+    justify-content: center;
+}
+
+.title{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+span{
+    color: #f2eb03;
+}
+
+.container{
+    background: #4fb835;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.turn-indicator{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restart{
+    color: rgb(173, 41, 41);
+    cursor: pointer;
+}
+
+.restart:hover{
+    color: rgb(153, 74, 74);
+    cursor: pointer;
+}
+
+.board{
+    display: grid;
+    background: rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.cell{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #4fb835;
+}
+
+.x::after{
+    content: "X";
+    font-size: 100px;
+    /* background-color: #fff; */
+}
+
+.o::after{
+    content: "O";
+    font-size: 100px;
+    color: rgb(238, 172, 50);
+}
+
+.won{
+    color: rgb(231, 191, 13);
+}
